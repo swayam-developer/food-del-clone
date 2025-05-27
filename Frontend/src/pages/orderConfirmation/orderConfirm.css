@@ -1,0 +1,96 @@
+/* Order Confirmation Page Styling */
+.order-confirmation {
+  width: 100%;
+  margin: 40px auto;
+  padding: 20px;
+  background: whitesmoke;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0);
+  text-align: center;
+  font-family: "Arial", sans-serif;
+}
+
+/* Header Section */
+.order-header h1 {
+  color: #2c3e50;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.order-header p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.customer-info h2 {
+  font-size: 25px;
+  color: #2c3e50;
+}
+.customer-info-box P {
+  font-size: 17px;
+}
+
+/* Order Receipt */
+.order-receipt {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 70%;
+  margin-left: 15%;
+  border:1px solid orangered;
+}
+
+.order-receipt h2 {
+  color: #ef3524;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+/* Receipt Table */
+.receipt-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: snow;
+}
+
+.receipt-table th,
+.receipt-table td {
+  border: 1px transparent black;
+  padding: 10px;
+  text-align: center;
+}
+
+.receipt-table th {
+  background: grey;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.receipt-table tfoot td {
+  font-weight: bold;
+  background: orangered;
+  color: white;
+}
+
+/* Back to Home Button */
+.back-home {
+  margin-top: 20px;
+}
+
+.back-home button {
+  padding: 10px 18px;
+  font-size: 16px;
+  background: orangered;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.back-home button:hover {
+  background: red;
+}
