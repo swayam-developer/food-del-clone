@@ -1,104 +1,115 @@
-/* Container */
-.confirmation-container {
-  min-height: 100vh;
-  background-color: #f9fafb;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.order-confirmation {
+  max-width: 1000px;
+  margin: 40px auto;
   padding: 2rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", sans-serif;
 }
 
-/* Card */
-.confirmation-card {
-  background-color: #ffffff;
-  padding: 2rem;
-  max-width: 800px;
-  width: 100%;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-/* Header */
-.confirmation-header {
+.order-header {
   text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-.confirmation-header h1 {
-  color: #16a34a;
-  font-size: 1.75rem;
-  margin-bottom: 0.5rem;
-}
-
-.confirmation-header p {
-  color: #4b5563;
-  font-size: 1rem;
-}
-
-/* Sections */
-.details-section,
-.receipt-section {
   margin-bottom: 2rem;
 }
 
-.details-section h2,
-.receipt-section h2 {
-  margin-bottom: 0.75rem;
+.order-header h1 {
+  color: #16a34a;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.order-header p {
+  color: #555;
+  font-size: 1rem;
+}
+
+.customer-info h2,
+.order-receipt h2 {
   font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.customer-info-box {
+  background-color: #f1f5f9;
+  padding: 1rem;
+  border-radius: 8px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.order-receipt {
+  margin-top: 2rem;
+}
+
+.item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.item-row {
+  display: flex;
+  align-items: flex-start;
+  background: #f9fafb;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 1rem;
+  border: 1px solid #e5e7eb;
+}
+
+.item-info h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
   color: #111827;
 }
 
-.details-box p {
-  margin: 0.25rem 0;
+.item-info p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
   color: #374151;
 }
 
-/* Table */
-.receipt-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.95rem;
-}
-
-.receipt-table th,
-.receipt-table td {
-  padding: 0.75rem;
-  border-bottom: 1px solid #e5e7eb;
-  text-align: left;
-}
-
-.receipt-table thead {
-  background-color: #f3f4f6;
-}
-
-.total-label {
-  text-align: right;
-  font-weight: 600;
-}
-
-.total-amount {
+.item-info .total {
   font-weight: bold;
+  color: #111827;
+  margin-top: 0.5rem;
+}
+
+.total-paid {
+  text-align: right;
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
   color: #111827;
 }
 
-/* Button */
-.button-wrapper {
+.back-home {
   text-align: center;
+  margin-top: 2rem;
 }
 
-.button-wrapper button {
+.back-home button {
+  padding: 0.8rem 2rem;
   background-color: tomato;
   color: white;
-  padding: 0.75rem 2rem;
-  font-weight: 600;
+  font-size: 1rem;
   border: none;
-  border-radius: 9999px;
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.button-wrapper button:hover {
+.back-home button:hover {
   background-color: orangered;
   transform: scale(1.05);
 }

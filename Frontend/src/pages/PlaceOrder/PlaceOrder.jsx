@@ -4,7 +4,7 @@ import { StoreContext } from "../../context/StoreContext";
 import { useNavigate } from "react-router-dom";
 
 const PlaceOrder = () => {
-  const { getTotalCartAmount, getDeliveryFee, food_list, cartItems } =
+  const { getTotalCartAmount, getDeliveryFee, food_list, cartItems, url } =
     useContext(StoreContext);
   const navigate = useNavigate();
 
@@ -35,6 +35,7 @@ const PlaceOrder = () => {
         name: item.name,
         quantity: cartItems[item._id],
         price: item.price,
+        image: url + "/images/" + item.image, // <-- Use full image URL
       }));
 
     // Prepare order details
